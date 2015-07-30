@@ -913,7 +913,7 @@ g1ySJEmSJElqe/8fKMptfl04ysQAAAAASUVORK5CYII=
 1) generally more than three as many male users as female
 2) nearly all users are subscribers (gender = other category)
 3) clearly observe the pattern of use due to weather (riding peaks in fall, lowest in winter)</p>
-<p>It would be useful to come up with a stradegy to take out the weather dependence.  Maybe look at the ratio of male to female riders since the usage presumably scales equally with weather conditions.</p>
+<p>It would be useful to come up with a strategy to take out the weather dependence.  Maybe look at the ratio of male to female riders since the usage presumably scales equally with weather conditions.  Even better would be to get my hands on some weather data to come up with a seasonal model to take this out.  For now we look at the ratio.</p>
 
 </div>
 </div>
@@ -1198,8 +1198,8 @@ pJ7ZyCRJkiRJkqSe2cgkSZIkSZKkntnIJEmSJEmSpJ79H0V2nx5A7FY+AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>From the above plot, it looks like the effect of weather is still not taken out completely in the ratio.  Additionallym there does not seem to be a strong indication of an increase or decrease in use over time, though the time span of the data is rather small.</p>
-<p>Lets look at the kind of age groups that use the service.  Ideally the calculation would be done in parallel for each file (from my current analysis experience at BNL, I would use condor, but I would also be willing to learn mapreduce).  But without those resources at home, we will just carry out this analysis for one specific month of data (September 2013).</p>
+<p>From the above plot, it looks like the effect of weather is still not taken out completely in the ratio.  Additionally there does not seem to be a strong indication of an increase or decrease in use over time, though the time span of the data is rather small.</p>
+<p>Lets look at the kind of age groups that use the service.  Ideally the calculation would be done in parallel for each month (file) which is a simple extension to the analsyis here, but for now I will only explore a single months worth of data (September 2013).</p>
 
 </div>
 </div>
@@ -1837,7 +1837,7 @@ Z1yppNawJ09SG7wG+NdJvgc8DfxvTfu/A/YmOVRVlzTDpQ8BjwF/eJrzfQT4t0n+CvjZk89z0r4n
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>It looks as though there are two major spikes in ride start time, one around 8 or 9am and the other around 6pm.  This most likely corresponds to the start and end of the normal workday, indicating that many people use the bike system to get back and forth from work.  Though this cannot account for all use, since the 6pm peak is higher than the 8pm peak.  It might be interesting to look at this more diffentially, say the distribution on weekends as opposed to weekends.  Maybe even break it down by season.</p>
+<p>It looks as though there are two major spikes in ride start time, one around 8 or 9am and the other around 6pm.  This most likely corresponds to the start and end of the normal workday, indicating that many people use the bike system to get back and forth from work.  Though this cannot account for all use, since the 6pm peak is higher than the 8am peak.  It might be interesting to look at this more diffentially, say the distribution on weekends as opposed to weekends.  Maybe even break it down by season.</p>
 <p>Now let us look at some differences between round trip and single trip rides.  Round trip is defined as a ride that has the same end station id as start station id.</p>
 
 </div>
